@@ -1,10 +1,10 @@
 name: Versioning Automation with SemVer
 
 on:
+  workflow_call:
   push:
     branches:   
       - master
-####
 
 jobs:
   Workflow-versioning:
