@@ -4,6 +4,7 @@ on:
   push:
     branches:   
       - master
+####
 
 jobs:
   Workflow-versioning:
@@ -33,3 +34,4 @@ jobs:
         title: ${{ steps.versioning.outputs.version }}
         automatic_release_tag: ${{ steps.versioning.outputs.version }}
         prerelease: false
+
