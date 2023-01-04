@@ -1,0 +1,11 @@
+name: Call the reusable workflow dotnet nuget release
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - master
+
+jobs:
+  workflow-release:
+    uses: tiagomartimiano/github-nuget-prerelease-release-workflow/.github/workflows/dotnet-nuget-release.yml@v1.0.0
